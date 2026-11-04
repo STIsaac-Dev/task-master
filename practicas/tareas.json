@@ -1,0 +1,14 @@
+[
+  {
+    "titulo": "Aprender JavaScript",
+    "completada": false
+  },
+  {
+    "titulo": "Crear Task Master",
+    "completada": true
+  },
+  {
+    "titulo": "Aprender React",
+    "completada": false
+  }
+]

@@ -1,0 +1,5 @@
+console.log("Hola, Task Master")
+console.log("Estoy aprendiendo JavaScript")
+console.log("Mi objetivo es convertirme en programador")
+console.log("Estoy construyendo mi primer proyecto")
+console.log("Mi aprendizaje ha comenzado")
