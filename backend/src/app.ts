@@ -10,4 +10,5 @@ app.get('/', (_req, res) => {
   res.json({ message: 'La API está funcionando correctamente' });
 });
 
+
 export default app;

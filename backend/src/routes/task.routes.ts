@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { getTasks } from '../controllers/task.controller.js';
+import { getTasks, postTask } from '../controllers/task.controller.js';
 const router = Router();
 
 router.get('/', getTasks);
+router.post('/', postTask);
 
 export default router;

@@ -1,3 +1,4 @@
+import { title } from 'node:process';
 import type {Task} from '../types/task.js';
 import {randomUUID} from 'node:crypto';
 
@@ -19,4 +20,15 @@ const tasks: Task[] = [
 
 export function getAllTasks(): Task[] {
     return tasks;
+}
+
+export function createTask(data: {title: string; description?: string}): Task {
+    const newTask: Task = {
+        ...data,
+        id: randomUUID(),
+        completed: false,
+        createdAt: new Date(),
+    };
+    tasks.push(newTask);
+    return newTask;
 }

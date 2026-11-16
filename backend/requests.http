@@ -1,0 +1,30 @@
+### Listar tareas
+GET http://localhost:3000/api/tasks
+
+### Crear tarea
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Mi primera tarea",
+    "description": "Nada que mostrar"
+}
+### Test 1: El Atacante
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Mi primera tarea",
+    "description": "Nada que mostrar",
+    "id": "soy-un-hacker",
+    "completed": true
+}
+### Test 2: El Cliente Descuidado
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "description": "Nada que mostrar",
+    "id": "soy-un-hacker",
+    "completed": true
+}
